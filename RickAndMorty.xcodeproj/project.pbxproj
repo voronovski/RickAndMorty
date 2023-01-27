@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		FA3453FA29839F4800193D15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3453F929839F4800193D15 /* AppDelegate.swift */; };
 		FA3453FC29839F4800193D15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3453FB29839F4800193D15 /* SceneDelegate.swift */; };
-		FA3453FE29839F4800193D15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3453FD29839F4800193D15 /* ViewController.swift */; };
+		FA3453FE29839F4800193D15 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3453FD29839F4800193D15 /* MainViewController.swift */; };
 		FA34540129839F4800193D15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3453FF29839F4800193D15 /* Main.storyboard */; };
 		FA34540329839F4900193D15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA34540229839F4900193D15 /* Assets.xcassets */; };
 		FA34540629839F4900193D15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA34540429839F4900193D15 /* LaunchScreen.storyboard */; };
@@ -20,7 +20,7 @@
 		FA3453F629839F4800193D15 /* RickAndMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3453F929839F4800193D15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA3453FB29839F4800193D15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA3453FD29839F4800193D15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA3453FD29839F4800193D15 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FA34540029839F4800193D15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA34540229839F4900193D15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA34540529839F4900193D15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 		FA34540E2983A00D00193D15 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FA3453FD29839F4800193D15 /* ViewController.swift */,
+				FA3453FD29839F4800193D15 /* MainViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -181,7 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA3453FE29839F4800193D15 /* ViewController.swift in Sources */,
+				FA3453FE29839F4800193D15 /* MainViewController.swift in Sources */,
 				FA3453FA29839F4800193D15 /* AppDelegate.swift in Sources */,
 				FA3453FC29839F4800193D15 /* SceneDelegate.swift in Sources */,
 				FA3454122983A32400193D15 /* Character.swift in Sources */,
@@ -333,7 +333,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 67668SBPLN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RickAndMorty/Info.plist;
+				INFOPLIST_FILE = RickAndMorty/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Rick and Morty";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -365,7 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 67668SBPLN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RickAndMorty/Info.plist;
+				INFOPLIST_FILE = RickAndMorty/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Rick and Morty";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

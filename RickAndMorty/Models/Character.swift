@@ -6,8 +6,8 @@
 //
 
 struct Character: Decodable {
-    let id: Int?
-    let name: String?
-    let gender: String?
-    let image: String?
+    let id: Int
+    let name: String
+    let gender: String
+    let image: String
 }
