@@ -40,6 +40,5 @@ extension MainViewController {
                 print(error.localizedDescription)
             }
         }.resume()
-        
     }
 }
