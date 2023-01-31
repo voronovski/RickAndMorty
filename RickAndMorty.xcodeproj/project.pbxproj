@@ -14,6 +14,7 @@
 		FA34540629839F4900193D15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA34540429839F4900193D15 /* LaunchScreen.storyboard */; };
 		FA3454122983A32400193D15 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3454112983A32400193D15 /* Character.swift */; };
 		FADCDE212988E8DF0076A415 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADCDE202988E8DF0076A415 /* NetworkManager.swift */; };
+		FADCDE232988EDB20076A415 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADCDE222988EDB20076A415 /* MainTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FA34540729839F4900193D15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA3454112983A32400193D15 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		FADCDE202988E8DF0076A415 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FADCDE222988EDB20076A415 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		FA34540E2983A00D00193D15 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				FADCDE222988EDB20076A415 /* MainTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				FA3453FA29839F4800193D15 /* AppDelegate.swift in Sources */,
 				FADCDE212988E8DF0076A415 /* NetworkManager.swift in Sources */,
 				FA3453FC29839F4800193D15 /* SceneDelegate.swift in Sources */,
+				FADCDE232988EDB20076A415 /* MainTableViewController.swift in Sources */,
 				FA3454122983A32400193D15 /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
