@@ -9,5 +9,10 @@ struct Character: Decodable {
     let id: Int
     let name: String
     let gender: String
+    let origin: Origin
     let image: String
+}
+
+struct Origin: Decodable {
+    let name: String
 }
