@@ -11,8 +11,8 @@
         <scene sceneID="EZ8-Tk-xTJ">
             <objects>
                 <navigationController id="t4U-dw-azy" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LRv-sp-iNg">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="LRv-sp-iNg">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -23,7 +23,7 @@
             </objects>
             <point key="canvasLocation" x="-968" y="-75"/>
         </scene>
-        <!--Rick and Morty TOP25 characters-->
+        <!--Rick and Morty-->
         <scene sceneID="iOm-kh-Pju">
             <objects>
                 <tableViewController id="IgF-Iz-xbS" customClass="MainTableViewController" customModule="RickAndMorty" customModuleProvider="target" sceneMemberID="viewController">
@@ -55,7 +55,7 @@
                             <outlet property="delegate" destination="IgF-Iz-xbS" id="CcG-If-PCF"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Rick and Morty TOP25 characters" id="3HF-vE-qgD"/>
+                    <navigationItem key="navigationItem" title="Rick and Morty" id="3HF-vE-qgD"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbT-k5-yGo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

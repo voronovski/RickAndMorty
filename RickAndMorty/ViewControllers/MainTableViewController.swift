@@ -11,7 +11,6 @@ final class MainTableViewController: UITableViewController {
 
     //MARK: Private properties
     var characters: [Character] = []
-    var characterImage = UIImage(systemName: "person")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,22 +19,14 @@ final class MainTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        characters.count
-    }
-
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        String(characters[section].id)
-    }
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        1
+        characters.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
-        let character = characters[indexPath.section]
+        let character = characters[indexPath.row]
         var content = cell.defaultContentConfiguration()
         content.text = character.name
         content.secondaryText = """
@@ -43,18 +34,16 @@ final class MainTableViewController: UITableViewController {
             From: \(character.origin.name)
             """
         
-        NetworkManager.shared.fetchImage(from: character.image) { [weak self] result in
+        NetworkManager.shared.fetchImage(from: character.image) { result in
             switch result {
-            case .success(let imageDate):
-                self?.characterImage = UIImage(data: imageDate)
+            case .success(let imageData):
+                content.image = UIImage(data: imageData)
+                content.imageProperties.cornerRadius = tableView.rowHeight / 2
+                cell.contentConfiguration = content
             case .failure(let error):
                 print(error)
             }
         }
-        
-        content.image = characterImage
-        content.imageProperties.cornerRadius = tableView.rowHeight / 2
-        cell.contentConfiguration = content
         return cell
     }
 }
