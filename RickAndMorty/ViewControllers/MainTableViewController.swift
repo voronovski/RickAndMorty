@@ -29,12 +29,13 @@ final class MainTableViewController: UITableViewController {
         let character = characters[indexPath.row]
         var content = cell.defaultContentConfiguration()
         content.text = character.name
-        content.secondaryText = """
-            Gender: \(character.gender),
-            From: \(character.origin.name)
-            """
+        content.secondaryText = character.gender
+//        content.secondaryText = """
+//            Gender: \(character.gender ?? ""),
+//            From: \(character.name ?? "")
+//            """
         
-        NetworkManager.shared.fetchImage(from: character.image) { result in
+        NetworkManager.shared.fetchData(from: character.image ?? "") { result in
             switch result {
             case .success(let imageData):
                 content.image = UIImage(data: imageData)
@@ -51,13 +52,13 @@ final class MainTableViewController: UITableViewController {
 //MARK: Networking
 extension MainTableViewController {
     private func fetchCharacters() {
-        NetworkManager.shared.fetch(dataType: [Character].self, from: Link.top25.rawValue) { [weak self] result in
+        NetworkManager.shared.fetchCharacters(from: Link.top25.rawValue) { [weak self] result in
             switch result {
             case .success(let characters):
                 self?.characters = characters
                 self?.tableView.reloadData()
             case .failure(let error):
-                print(error)
+                print(error.localizedDescription)
             }
         }
     }
