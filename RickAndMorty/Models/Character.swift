@@ -9,14 +9,14 @@ struct Character: Decodable {
     let id: Int?
     let name: String?
     let gender: String?
-//    let origin: Origin?
+    let origin: OriginLocation?
     let image: String?
     
     init(characterData: [String: Any]) {
         id = characterData["id"] as? Int
         name = characterData["name"] as? String
         gender = characterData["gender"] as? String
-    //  origin = character["origin"] as? Origin
+        origin = OriginLocation(value: characterData)
         image = characterData["image"] as? String
     }
     
@@ -26,7 +26,11 @@ struct Character: Decodable {
     }
 }
 
-//struct Origin: Decodable {
-//    let name: String
-//}
-
+struct OriginLocation: Decodable {
+    let name: String
+    
+    init(value: [String: Any]) {
+        let origin = value["origin"] as? [String: String]
+        name = origin?["name"] ?? ""
+    }
+}

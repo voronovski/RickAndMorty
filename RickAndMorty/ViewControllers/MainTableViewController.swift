@@ -29,11 +29,10 @@ final class MainTableViewController: UITableViewController {
         let character = characters[indexPath.row]
         var content = cell.defaultContentConfiguration()
         content.text = character.name
-        content.secondaryText = character.gender
-//        content.secondaryText = """
-//            Gender: \(character.gender ?? ""),
-//            From: \(character.name ?? "")
-//            """
+        content.secondaryText = """
+            Gender: \(character.gender ?? ""),
+            From: \(character.origin?.name ?? "")
+            """
         
         NetworkManager.shared.fetchData(from: character.image ?? "") { result in
             switch result {
