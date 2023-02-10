@@ -9,7 +9,7 @@ import UIKit
 
 final class MainTableViewController: UITableViewController {
 
-    //MARK: Private properties
+    //MARK: - Private properties
     var characters: [Character] = []
     
     override func viewDidLoad() {
@@ -48,10 +48,10 @@ final class MainTableViewController: UITableViewController {
     }
 }
 
-//MARK: Networking
+//MARK: - Networking
 extension MainTableViewController {
     private func fetchCharacters() {
-        NetworkManager.shared.fetchCharacters(from: Link.top25.rawValue) { [weak self] result in
+        NetworkManager.shared.fetchCharacters(from: Link.top50.rawValue) { [weak self] result in
             switch result {
             case .success(let characters):
                 self?.characters = characters
