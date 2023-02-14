@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView! {
@@ -15,15 +16,16 @@ class CollectionViewCell: UICollectionViewCell {
     }
     @IBOutlet weak var label: UILabel!
     
-//    private var imageURL: URL? {
-//        didSet {
-//            imageView.image = nil
-//        }
-//    }
+    private var imageURL: URL? {
+        didSet {
+            imageView.image = nil
+        }
+    }
     
     func configure(with character: Character) {
         label.text = character.name
-//        imageView.image = UIImage(systemName: "person.circle")
-        imageView.backgroundColor = .darkGray
+        
+        guard let imageURL = URL(string: character.image ?? "") else { return }
+        imageView.af.setImage(withURL: imageURL)
     }
 }
