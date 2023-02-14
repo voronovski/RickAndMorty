@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA191611299B766900FC80A9 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = FA191610299B766900FC80A9 /* AlamofireImage */; };
 		FA3453FA29839F4800193D15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3453F929839F4800193D15 /* AppDelegate.swift */; };
 		FA3453FC29839F4800193D15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3453FB29839F4800193D15 /* SceneDelegate.swift */; };
 		FA34540129839F4800193D15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3453FF29839F4800193D15 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAAE9A99298C9AA200AD9B76 /* Alamofire in Frameworks */,
+				FA191611299B766900FC80A9 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +149,7 @@
 			name = RickAndMorty;
 			packageProductDependencies = (
 				FAAE9A98298C9AA200AD9B76 /* Alamofire */,
+				FA191610299B766900FC80A9 /* AlamofireImage */,
 			);
 			productName = RickAndMorty;
 			productReference = FA6371D92998CC5D00DC5832 /* RickAndMorty.app */;
@@ -178,6 +181,7 @@
 			mainGroup = FA3453ED29839F4800193D15;
 			packageReferences = (
 				FAAE9A97298C9AA200AD9B76 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FA19160F299B766900FC80A9 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = FA3453ED29839F4800193D15;
 			projectDirPath = "";
@@ -440,6 +444,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		FA19160F299B766900FC80A9 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 		FAAE9A97298C9AA200AD9B76 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -451,6 +463,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FA191610299B766900FC80A9 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA19160F299B766900FC80A9 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
 		FAAE9A98298C9AA200AD9B76 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FAAE9A97298C9AA200AD9B76 /* XCRemoteSwiftPackageReference "Alamofire" */;
