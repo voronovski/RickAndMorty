@@ -16,6 +16,7 @@
 		FA3454122983A32400193D15 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3454112983A32400193D15 /* Character.swift */; };
 		FA6371DB2998CEAE00DC5832 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6371DA2998CEAE00DC5832 /* CollectionViewCell.swift */; };
 		FA747B792998C87C0017F011 /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA747B782998C87C0017F011 /* MainCollectionViewController.swift */; };
+		FA8EE54B299DF19400A5751C /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8EE54A299DF19400A5751C /* ImageCacheManager.swift */; };
 		FAAE9A99298C9AA200AD9B76 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FAAE9A98298C9AA200AD9B76 /* Alamofire */; };
 		FADCDE212988E8DF0076A415 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADCDE202988E8DF0076A415 /* NetworkManager.swift */; };
 		FADCDE232988EDB20076A415 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADCDE222988EDB20076A415 /* MainTableViewController.swift */; };
@@ -32,6 +33,7 @@
 		FA6371D92998CC5D00DC5832 /* RickAndMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6371DA2998CEAE00DC5832 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		FA747B782998C87C0017F011 /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
+		FA8EE54A299DF19400A5751C /* ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
 		FADCDE202988E8DF0076A415 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		FADCDE222988EDB20076A415 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				FADCDE202988E8DF0076A415 /* NetworkManager.swift */,
+				FA8EE54A299DF19400A5751C /* ImageCacheManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				FA747B792998C87C0017F011 /* MainCollectionViewController.swift in Sources */,
 				FADCDE212988E8DF0076A415 /* NetworkManager.swift in Sources */,
 				FA6371DB2998CEAE00DC5832 /* CollectionViewCell.swift in Sources */,
+				FA8EE54B299DF19400A5751C /* ImageCacheManager.swift in Sources */,
 				FA3453FC29839F4800193D15 /* SceneDelegate.swift in Sources */,
 				FADCDE232988EDB20076A415 /* MainTableViewController.swift in Sources */,
 				FA3454122983A32400193D15 /* Character.swift in Sources */,
